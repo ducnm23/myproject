@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{decorators/client.html}"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Introduce page</title>
+</head>
+<body layout:fragment="content">
+    <section class="section_introduct">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <aside>
+                        <h1>Giới thiệu</h1>
+                        <div class="image_troduct">
+                            <img th:src="@{/image/watchstore.png}" alt="">
+                        </div>
+                        <div class="content">
+                            <p><strong>Watch Store</strong> được thành lập năm 2014 tại địa chỉ 371 Cầu Giấy, Hà Nội, sau đó tháng 8/ 2020 mở thêm chi nhánh ở 97 Man Thiện, phường Hiệp Phú, quận 9, thành phố Hồ Chí Minh</p>
+                            <p><strong>Watch Store</strong> là một cái tên nổi tiếng trong giới kinh doanh đồng hồ không chỉ bởi chất lượng sản phẩm, giá thành hợp lý mà còn bởi sự tận tâm với khách hàng</p>
+                            <p><strong>Watch Store</strong> là thương hiệu lâu năm uy tín, với đội ngũ nhân viên giàu kinh nghiệm trong nghề, nhiệt tình, thân thiện, luôn đáp ứng được nhu cầu của khách hàng</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

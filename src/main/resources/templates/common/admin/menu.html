@@ -1,0 +1,59 @@
+<div class="col-lg-2 col-md-2 col-sm-2 sidebar hidden-sm"  xmlns:th="http://thymeleaf.org" th:fragment="menu">
+    <ul class="list-group">
+        <li class="list-group-item"  th:classappend="${session.active} == 'dashboard' ? active : ''" ><a th:href="@{/admin/dashboard}">Dashboard</a></li>
+        <li class="list-group-item" th:classappend="${session.active} == 'product' ? active : ''">
+            <a th:href="@{/admin/api/product}">
+                <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                &nbsp; Product management
+            </a>
+        </li>
+        <li class="list-group-item" th:classappend="${session.active} == 'category' ? active : ''">
+            <a th:href="@{/admin/api/category}">
+                <i class="fa fa-th-large" aria-hidden="true"></i>
+                &nbsp; Category management
+            </a>
+        </li>
+<!--        <li class="list-group-item">-->
+<!--            <a th:href="@{/admin/api/image}" th:classappend="${session.active} == 'image' ? active : ''">-->
+<!--                <i class="fa fa-object-group" aria-hidden="true"></i>-->
+<!--                &nbsp; Image management-->
+<!--            </a>-->
+<!--        </li>-->
+        <li class="list-group-item">
+            <a th:href="@{/admin/api/group}" th:classappend="${session.active} == 'group' ? active : ''">
+                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                &nbsp; Product Group management
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a th:href="@{/admin/api/order}" th:classappend="${session.active} == 'order' ? active : ''">
+                <i class="fa fa-file" aria-hidden="true"></i>
+                &nbsp; Bill management
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a th:href="@{/admin/api/user}" th:classappend="${session.active} == 'user' ? active : ''">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                &nbsp; User management
+            </a>
+        </li>
+<!--        <li class="list-group-item">-->
+<!--            <a th:href="@{/admin/api/role}" th:classappend="${session.active} == 'role' ? active : ''">-->
+<!--                <i class="fa fa-user-secret" aria-hidden="true"></i>-->
+<!--                &nbsp; Role management-->
+<!--            </a>-->
+<!--        </li>-->
+        <li class="list-group-item">
+            <a th:href="@{/admin/api/bill}" th:classappend="${session.active} == 'order' ? active : ''">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                &nbsp; Oder management
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a th:href="@{/admin/api/statistic}" th:classappend="${session.active} == 'statistic' ? active : ''">
+                <i class="menu-icon fa fa-signal" aria-hidden="true"></i>
+                &nbsp; Statistic management
+            </a>
+        </li>
+    </ul>
+</div>
